@@ -25,12 +25,13 @@ const float tone_frequency = 3322.44F;
 const uint32_t tone_duration = 50U;
 
 M5Canvas ContentSprite;
+M5Canvas WindowSprite;
 
 void connect_wifi(){
   Serial.println("Connecting to Wi-Fi...");
   M5.Display.print("Wi-Fiに接続しています");
 
-  for (int i = 0; i < sizeof(wifi_infos) / sizeof(struct wifi_info_t); i++) {
+  for (uint8_t i = 0; i < sizeof(wifi_infos) / sizeof(struct wifi_info_t); i++) {
     wifiMulti.addAP(wifi_infos[i].ssid, wifi_infos[i].password);
   }
 
@@ -132,7 +133,7 @@ String request_to_chatgpt(const String req_payload) {
 void show_ancient_text() {
   M5.Speaker.tone(tone_frequency, tone_duration);
 
-  int rnd = random(first_letter_options.length() / hiragana_bytes);
+  uint16_t rnd = random(first_letter_options.length() / hiragana_bytes);
 
   String first_letter = first_letter_options.substring(rnd * hiragana_bytes, rnd * hiragana_bytes + hiragana_bytes);
 
@@ -145,14 +146,15 @@ void show_ancient_text() {
   String req_payload = build_req_payload(first_letter);
   String content = request_to_chatgpt(req_payload);
   if (content != "") {
-    M5.Display.fillScreen(TFT_BLACK);
-    M5.Display.fillRoundRect(0, 50, 320, 145, 8, TFT_WHITE);
-    M5.Display.fillRoundRect(2, 52, 316, 141, 8, TFT_BLACK);
+    WindowSprite.fillScreen(TFT_BLACK);
+    WindowSprite.fillRoundRect(0, 0, 320, 145, 8, TFT_WHITE);
+    WindowSprite.fillRoundRect(2, 2, 316, 141, 8, TFT_BLACK);
     ContentSprite.fillScreen(TFT_BLACK);
     ContentSprite.setCursor(0, 0);
     ContentSprite.setFont(&fonts::lgfxJapanGothic_20);
     ContentSprite.println(content);
-    ContentSprite.pushSprite(&M5.Display, 30, 70); 
+    ContentSprite.pushSprite(&WindowSprite, 30, 20); 
+    WindowSprite.pushSprite(&M5.Display, 0, 50); 
 
     M5.Speaker.tone(tone_frequency, tone_duration);
   }
@@ -180,7 +182,10 @@ void setup() {
 
   connect_wifi();
 
+  ContentSprite.setPsram(true);
+  WindowSprite.setPsram(true);
   ContentSprite.createSprite(260, 100);
+  WindowSprite.createSprite(320, 150);
 
   show_ancient_text();
 } 
