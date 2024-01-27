@@ -3,11 +3,17 @@
 
 A sketch for [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) .
 
-m5core2_ancient_text_by_chatgpt is a program generate ancient text with ChatGPT API.
+m5core2_ancient_text_by_chatgpt is a program generate ancient document-like text for JRPG with [ChatGPT](https://chat.openai.com/) API.
+
+\[日本語\]
+
+[M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) 用のスケッチです。
+
+m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使ってRPGの古文書風のテキストを生成するプログラムです。
 
 # Video
 
-Video is available on [Twitter](https://twitter.com/cubic9com/status/1745622836188951034) .
+![video](video.gif)
 
 # Installing
 
@@ -33,6 +39,21 @@ Video is available on [Twitter](https://twitter.com/cubic9com/status/17456228361
 1. Open this project which you downloaded above.
 1. Click the PlatformIO icon in the left Activity Bar.
 1. Click `PROJECT TASKS/m5stack-core2/General/Upload` in the left Primary Sidebar.
+
+\[日本語\]
+
+1. このプロジェクトを[GitHub](https://github.com/cubic9com/m5core2_eyes)からダウンロードする。
+1. [Visual Studio Code](https://code.visualstudio.com/)をダウンロードしてインストールする。
+1. VSCodeを起動する。
+1. 左のアクティビティバーにあるExtensions managerアイコンをクリックする。
+1. `platformio ide` を検索し、 `PlatformIO IDE` エクステンションをインストールする。
+1. VSCodeを起動する。
+1. 左のアクティビティバーのPlatformIOアイコンをクリックする。
+1. 左のプライマリサイドバーの `QUICK ACCESS/PIO Home/Open` をクリックする。
+1. 右側のエディタグループの `PIO HOME` タブにある `Open Project` をクリックする。
+1. 上記でダウンロードしたプロジェクトを開く。
+1. 左のアクティビティバーのPlatformIOアイコンをクリックする。
+1. 左のプライマリサイドバーの `PROJECT TASKS/m5stack-core2/General/Upload` をクリックする。
 
 # LICENSE
 
