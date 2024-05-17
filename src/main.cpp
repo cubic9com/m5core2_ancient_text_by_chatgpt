@@ -64,7 +64,7 @@ String build_req_payload(const String first_letter) {
 
   String req_payload  = \
     "{" \
-      "\"model\": \"gpt-3.5-turbo\", " \
+      "\"model\": \"gpt-4o\", " \
       "\"max_tokens\": 90, " \
       "\"messages\": " \
       "[" \
