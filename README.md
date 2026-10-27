@@ -4,7 +4,6 @@
 A sketch for [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) .
 
 m5core2_ancient_text_by_chatgpt is a program that generates ancient document-like text for a JRPG with the [ChatGPT](https://chat.openai.com/) API.
-m5core2_ancient_text_by_chatgpt is a program that generates ancient text with the ChatGPT API.
 
 \[日本語\]
 
@@ -32,7 +31,7 @@ m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使
 
 1. Click `API Keys` in the left sidebar.
 
-1. Make sure a key has created. If it does not exist, create it and copy it.
+1. Make sure a key has been created. If it does not exist, create it and copy it.
 
 1. Clone the repository:
     ```sh
