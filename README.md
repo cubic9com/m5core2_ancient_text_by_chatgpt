@@ -3,7 +3,8 @@
 
 A sketch for [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) .
 
-m5core2_ancient_text_by_chatgpt is a program generate ancient document-like text for JRPG with [ChatGPT](https://chat.openai.com/) API.
+m5core2_ancient_text_by_chatgpt is a program that generates ancient document-like text for a JRPG with the [ChatGPT](https://chat.openai.com/) API.
+m5core2_ancient_text_by_chatgpt is a program that generates ancient text with the ChatGPT API.
 
 \[日本語\]
 
@@ -17,7 +18,7 @@ m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使
 
 # Installation / インストール
 
-1. Login to [OpenAI API](https://platform.openai.com/) .
+1. Log in to [OpenAI API](https://platform.openai.com/) .
 
 1. Click `Settings/Billing` in the left sidebar.
 
@@ -27,11 +28,11 @@ m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使
 
 1. Fill the form.
 
-1. Click `Add payment method` button.
+1. Click the `Add payment method` button.
 
 1. Click `API Keys` in the left sidebar.
 
-1. Make sure key has created. If it does not exist, create it and copy it.
+1. Make sure a key has created. If it does not exist, create it and copy it.
 
 1. Clone the repository:
     ```sh
@@ -48,14 +49,14 @@ m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使
 
 1. Change the `ssid` value and `password` value in `src/main.cpp` to match your network.
 
-1. Change the `chatgpt_secret_key` value in `src/main.cpp` to match your OpenAPI secret key. 
+1. Change the `chatgpt_secret_key` value in `src/main.cpp` to match your OpenAI secret key. 
 
-1. Install `PlatformIO IDE` extension:
+1. Install the `PlatformIO IDE` extension:
     - Go to the Extensions view (`Ctrl+Shift+X`).
     - Search for `PlatformIO IDE` and install it.
 
 1. Open PlatformIO Home:
-    - In the left Activity Bar, click PlatformIO icon.
+    - In the left Activity Bar, click the PlatformIO icon.
     - In the left Primary Sidebar, go to `QUICK ACCESS > PIO Home > Open`.
 
 1. Open the project:
