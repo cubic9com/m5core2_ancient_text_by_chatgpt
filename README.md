@@ -1,15 +1,10 @@
-
 # Overview / 概要
 
-A sketch for [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) .
-
-m5core2_ancient_text_by_chatgpt is a program that generates ancient document-like text for a JRPG with the [ChatGPT](https://chat.openai.com/) API.
+An ancient text generator: an [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) that uses the [ChatGPT](https://chat.openai.com/) API to write mysterious, JRPG-style ancient texts.
 
 \[日本語\]
 
-[M5Stack Core2](https://docs.m5stack.com/#/en/core/core2) 用のスケッチです。
-
-m5core2_ancient_text_by_chatgptは [ChatGPT](https://chat.openai.com/) APIを使ってRPGの古文書風のテキストを生成するプログラムです。
+古文書ジェネレーター ―― [M5Stack Core2](https://docs.m5stack.com/#/en/core/core2)と[ChatGPT](https://chat.openai.com/) APIを組み合わせ、日本のRPGに登場するような、謎めいた古文書風のテキストを作り出すプロジェクトです。
 
 # Video / 動画
 
